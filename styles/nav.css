@@ -9,7 +9,7 @@ nav li{
      
       list-style: none;
       margin-top: 30px;
-      border: 1px solid aqua;
+      border: 1px solid grey;
       background-color:  #FFFFFF;
       border-radius: 10px;
       height: 40px;
@@ -22,4 +22,42 @@ nav li{
 nav li a{
       text-decoration: none;
       color: #161616;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+      .big-logs-img img {
+            width: 100%;
+            height: auto;
+            padding-left: 0;
+      }
+
+      section.text-banner {
+            align-items: self-end;
+      }
+
+      nav ul {
+            display: flex;
+            width: 100%;
+            background: transparent;
+            border: none;
+            justify-content: space-between;
+            padding-left: 0;
+      }
+
+      nav li {
+            width: 150px;
+      }
+}
+
+@media only screen and (max-width: 767px) {
+      nav ul {
+            background: transparent;
+            border: none;
+      }
+
+      nav li:hover {
+            background: red;
+            color: #fff;
+      }
 }
